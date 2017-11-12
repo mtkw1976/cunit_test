@@ -6,9 +6,12 @@ jobs:
     steps:
       - checkout
       - run:
+          name: display Env
+          command: set
+      - run:
           name: Make on vulture/gcc-valgrind-cunit
           command: make
-          command: cunit_test	  
       - run:
-          name: Print the Current Time
-          command: date
+          name: Exec on vulture/gcc-valgrind-cunit
+          command: cunit_test	  
+
