@@ -2,12 +2,13 @@ version: 2
 jobs:
   build:
     docker:
-      - image: debian:stretch
+      - image: vulture/gcc-valgrind-cunit
     steps:
       - checkout
       - run:
-          name: Greeting
-          command: echo Hello, world.
+          name: Make on vulture/gcc-valgrind-cunit
+          command: make
+          command: cunit_test	  
       - run:
           name: Print the Current Time
           command: date
