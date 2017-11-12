@@ -12,6 +12,9 @@ jobs:
           name: Make on vulture/gcc-valgrind-cunit
           command: make
       - run:
+          name: display Env after make
+          command: ls -lar
+      - run:
           name: Exec on vulture/gcc-valgrind-cunit
           command: cunit_test	  
 
