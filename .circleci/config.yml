@@ -16,5 +16,5 @@ jobs:
           command: ls -lar
       - run:
           name: Exec on vulture/gcc-valgrind-cunit
-          command: cunit_test	  
+          command: ./cunit_test	  
 
