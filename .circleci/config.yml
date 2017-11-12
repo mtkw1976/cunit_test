@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: display Env
-          command: set
+          command: set && ls -la
       - run:
           name: Make on vulture/gcc-valgrind-cunit
           command: make
